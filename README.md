@@ -8,6 +8,8 @@
 
 兄弟们送送免费的⭐吧
 
+<img title="" src="file:///C:/Users/Administrator/Pictures/E0652D9BAF73693120C50AFFF62BE65F.gif" alt="E0652D9BAF73693120C50AFFF62BE65F.gif" width="187" data-align="center" />
+
 ## 功能
 
 ### 1. 画面弹幕悬停 +1 / 复制
@@ -18,6 +20,8 @@
 - `复制`：复制这条画面弹幕的文本。
 - 鼠标移到菜单上时，被钉住的弹幕保持不动，方便点击。
 - 同一条轨道上出现两条相同文本时，也只钉住鼠标命中的那一条。
+
+![](C:\Users\Administrator\AppData\Roaming\marktext\images\35fa40204d2789951f39afbb1aefad41bf03a726.png)
 
 实现方式：在 `document-start` 劫持抖音播放器的 worker Blob，注入 `OffscreenCanvasRenderingContext2D` 补丁，通过 `BroadcastChannel` 把画面弹幕文本、坐标、字体回传主线程，再发送 `pin` 命令把选中的那一条画在固定坐标。
 
